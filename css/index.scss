@@ -164,7 +164,8 @@ main {
                     }
                 }
                 .work2_view{
-                    width:300px;height: 500px;
+                    // z-index:9999;
+                    width:360px;height: 640px;
                     border: 3px solid #000;
                     border-radius: 10%;
                 }
@@ -327,6 +328,7 @@ aside {
                         img{width:100%;}
                         .skill_title{
                             font-size:20px;
+                            width:150px;
                         }
                         .skill_txt{
                             font-size:16px;
