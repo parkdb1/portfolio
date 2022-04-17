@@ -374,7 +374,9 @@ aside .about .contents .who .who-box .left {
 }
 
 aside .about .contents .who .who-box .left .photo {
-  width: 70%;
+  width: 90%;
+  -webkit-transform: translate(-60px, 30px);
+          transform: translate(-60px, 30px);
 }
 
 aside .about .contents .who .who-box .left .photo img {
@@ -436,11 +438,11 @@ aside .about .contents .skill .skill_ul {
 
 aside .about .contents .skill .skill_ul li {
   margin-right: 15%;
-  width: 50%;
+  width: 30%;
 }
 
 aside .about .contents .skill .skill_ul li img {
-  width: 100%;
+  width: 50%;
 }
 
 aside .about .contents .skill .skill_ul li .skill_title {

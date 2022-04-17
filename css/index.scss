@@ -273,9 +273,10 @@ aside {
                     width:40%;
                     .photo{
                         // padding:%;
-                        width:70%;
+                        width:90%;
+                        
                         // margin:0 auto;
-                       // transform: translate(-30px,-50px);
+                        transform: translate(-60px, 30px);
                         img{width:100%;}
                         }
                     }
@@ -324,8 +325,8 @@ aside {
                     display: flex;
                     li{
                         margin-right:15%;
-                        width:50%;
-                        img{width:100%;}
+                        width:30%;
+                        img{width:50%;}
                         .skill_title{
                             font-size:20px;
                             width:150px;
