@@ -1,10 +1,9 @@
 @import "./_common";
 @import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
 * {
-    font-family: "Do Hyeon", sans-serif;
+    font-family: "Do Hyeon";
 }
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap'); 
 header {
     position: fixed;
     z-index:8;
@@ -17,8 +16,12 @@ header {
         display:none;
         line-height:1.2;
         a{
-            text-transform: uppercase;
             
+            color:#000;
+            text-transform: uppercase;
+        }
+        a:hover{
+            color:#FFB6C1
         }
     }
     nav.active{
@@ -43,12 +46,14 @@ header {
         display: flex;
         justify-content: flex-end;
         align-items: center;
+
         p.burger-menu {
             display: flex;
             align-items: center;
-           
+            
             span {
                 display:inline-block;
+
             }
             a {
                 margin-left: 5px;
@@ -138,6 +143,33 @@ main {
                 }
             }
         }
+        .swiper-slide{
+            
+            .work{
+                display: flex;
+                // justify-content: space-between;
+                // width: 100%;
+                .work_view{
+                    width:1040px;
+                    border:3px solid #000;
+                    border-radius:5%;
+                    height:500px;
+                }
+                .work_txt{
+                    white-space: pre-line;
+                    width:40%;
+                    padding:5%;
+                    p{
+                        font-size:22px;
+                    }
+                }
+                .work2_view{
+                    width:300px;height: 500px;
+                    border: 3px solid #000;
+                    border-radius: 10%;
+                }
+            }
+        }
         .next {
             position: absolute;
             right: 3%;
@@ -206,6 +238,7 @@ aside {
         }
     }
     .about {
+        font-family: 'Noto Sans KR', sans-serif;
         margin-top:20px;
         background: rgb(20, 20, 20);
         // color:#10f009;
@@ -214,31 +247,98 @@ aside {
         height: 90vh;
         overflow: auto;
         // margin:5%;
+        h2 {
+            font-size: 90px;
+            margin-top:50px;
+        }
         .contents {
-            // display: flex;
-            margin: 5%;
-            h2 {
-                font-size: 78px;
+            .who{
+                // text-align: left;
+                // border:3px solid #FFB6C1;
+                width:80%;
+                align-items: center;
+                margin:0 auto auto ;
+                padding:0 5%;
+                p{
+                    font-size:50px;
+                    margin: 2% auto;
+                }
+                .who-box{
+                    margin:5% auto ;
+                    display: flex;
+                    
+                .left{
+                    // border:1px solid #f00;
+                    width:40%;
+                    .photo{
+                        // padding:%;
+                        width:70%;
+                        // margin:0 auto;
+                       // transform: translate(-30px,-50px);
+                        img{width:100%;}
+                        }
+                    }
+                .right{
+                    text-align: left;
+                    padding-top:30px;
+                    // border:1px solid #f00;
+                    strong{
+                        font-size:20px;
+                        font-family : 'Noto Sans KR';
+                    }
+                    width:60%;
+                    .who-txt{
+                        font-size:16px;
+                        font-family : 'Noto Sans KR';
+
+                        }
+                    .icon{
+                        padding:5% 0;
+                        .icon_ul{
+                            display: flex;
+                            
+                            li{
+                                text-align: center;
+                                padding:0 5%;
+                                // img{width:70%}
+                                .icon_txt{
+                                    font-size:16px;
+                                }
+                            }
+                            }
+                        }
+                    }
+                }
             }
-            ul {
-                font-size: 35px;
-                li {
-                    padding-bottom: 30%;
+            .skill{
+                width:80%;
+                margin: 0 auto;
+                padding-bottom:10%;
+                p{
+                    font-size:50px;
+                    margin:5% 0 6% 0;
                 }
-                .who-txt {
-                    font-size: 16px;
-                    white-space: pre-line;
-                    font-family: "Noto Sans KR", sans-serif;
-                }
-                .motto-txt {
-                    font-size: 16px;
-                    white-space: pre-line;
-                    font-family: "Noto Sans KR", sans-serif;
+                .skill_ul{
+                    overflow-x: scroll;
+                    display: flex;
+                    li{
+                        margin-right:15%;
+                        width:50%;
+                        img{width:100%;}
+                        .skill_title{
+                            font-size:20px;
+                        }
+                        .skill_txt{
+                            font-size:16px;
+                        }
+                    }
                 }
             }
+            }
+            
         }
     }
-}
+
 
 @keyframes arrow-wave {
     0% {

@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -33,7 +33,7 @@ table {
 }
 
 * {
-  font-family: "Do Hyeon", sans-serif;
+  font-family: "Do Hyeon";
 }
 
 header {
@@ -52,7 +52,12 @@ header nav {
 }
 
 header nav a {
+  color: #000;
   text-transform: uppercase;
+}
+
+header nav a:hover {
+  color: #FFB6C1;
 }
 
 header nav.active {
@@ -213,6 +218,36 @@ main article .intro .view figure img {
   width: 100%;
 }
 
+main article .swiper-slide .work {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main article .swiper-slide .work .work_view {
+  width: 1040px;
+  border: 3px solid #000;
+  border-radius: 5%;
+  height: 500px;
+}
+
+main article .swiper-slide .work .work_txt {
+  white-space: pre-line;
+  width: 40%;
+  padding: 5%;
+}
+
+main article .swiper-slide .work .work_txt p {
+  font-size: 22px;
+}
+
+main article .swiper-slide .work .work2_view {
+  width: 300px;
+  height: 500px;
+  border: 3px solid #000;
+  border-radius: 10%;
+}
+
 main article .next {
   position: absolute;
   right: 3%;
@@ -299,6 +334,7 @@ aside .profile p {
 }
 
 aside .about {
+  font-family: 'Noto Sans KR', sans-serif;
   margin-top: 20px;
   background: #141414;
   color: #fff;
@@ -307,32 +343,112 @@ aside .about {
   overflow: auto;
 }
 
-aside .about .contents {
-  margin: 5%;
+aside .about h2 {
+  font-size: 90px;
+  margin-top: 50px;
 }
 
-aside .about .contents h2 {
-  font-size: 78px;
+aside .about .contents .who {
+  width: 80%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto auto;
+  padding: 0 5%;
 }
 
-aside .about .contents ul {
-  font-size: 35px;
+aside .about .contents .who p {
+  font-size: 50px;
+  margin: 2% auto;
 }
 
-aside .about .contents ul li {
-  padding-bottom: 30%;
+aside .about .contents .who .who-box {
+  margin: 5% auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-aside .about .contents ul .who-txt {
+aside .about .contents .who .who-box .left {
+  width: 40%;
+}
+
+aside .about .contents .who .who-box .left .photo {
+  width: 70%;
+}
+
+aside .about .contents .who .who-box .left .photo img {
+  width: 100%;
+}
+
+aside .about .contents .who .who-box .right {
+  text-align: left;
+  padding-top: 30px;
+  width: 60%;
+}
+
+aside .about .contents .who .who-box .right strong {
+  font-size: 20px;
+  font-family: 'Noto Sans KR';
+}
+
+aside .about .contents .who .who-box .right .who-txt {
   font-size: 16px;
-  white-space: pre-line;
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: 'Noto Sans KR';
 }
 
-aside .about .contents ul .motto-txt {
+aside .about .contents .who .who-box .right .icon {
+  padding: 5% 0;
+}
+
+aside .about .contents .who .who-box .right .icon .icon_ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+aside .about .contents .who .who-box .right .icon .icon_ul li {
+  text-align: center;
+  padding: 0 5%;
+}
+
+aside .about .contents .who .who-box .right .icon .icon_ul li .icon_txt {
   font-size: 16px;
-  white-space: pre-line;
-  font-family: "Noto Sans KR", sans-serif;
+}
+
+aside .about .contents .skill {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 10%;
+}
+
+aside .about .contents .skill p {
+  font-size: 50px;
+  margin: 5% 0 6% 0;
+}
+
+aside .about .contents .skill .skill_ul {
+  overflow-x: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+aside .about .contents .skill .skill_ul li {
+  margin-right: 15%;
+  width: 50%;
+}
+
+aside .about .contents .skill .skill_ul li img {
+  width: 100%;
+}
+
+aside .about .contents .skill .skill_ul li .skill_title {
+  font-size: 20px;
+}
+
+aside .about .contents .skill .skill_ul li .skill_txt {
+  font-size: 16px;
 }
 
 @-webkit-keyframes arrow-wave {
