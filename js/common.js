@@ -11,6 +11,7 @@ var swiper = new Swiper(".swiper", {
 
 
   const btnProfile = document.querySelector('aside');
+  
   btnProfile.addEventListener('click',function(){
     this.classList.toggle('active');
   });
@@ -22,3 +23,16 @@ var swiper = new Swiper(".swiper", {
     nav.classList.toggle('active');
 
   });
+
+  const btnTest = document.getElementById('about');  
+
+  btnTest.addEventListener('click',function(){  
+
+    let current = btnProfile.className.includes('active')
+    
+    if(current){
+      btnProfile.classList.remove('class', 'active')
+    }else {
+      btnProfile.classList.add('class', 'active')      
+    }
+  })

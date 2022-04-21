@@ -20,8 +20,8 @@
         <div class="head">
             <nav>
                 <a href="#">Home</a>
-                <a href="#">Work</a>
-                <a href="#">About</a>
+                <a href="#work_">Work</a>
+                <a id="about">About</a>
             </nav>
             <p class="burger-menu">
                 <span>
@@ -45,16 +45,16 @@
         css : font-family: 'Do Hyeon', sans-serif; 
         -->
 
-        <article class="slide swiper">
+        <article class="slide swiper" swiperview="1">
             <div class="swiper-wrapper">
                 <div class="intro swiper-slide">
                     <div class="txt">
-                        <h2>
+                        <h2 a herf="">
                             Danbee's<br>
                             Portfolio : 
                         </h2>
                         <p>
-                            3 awesome portfolios<br>
+                            2 awesome portfolios<br>
                             show how it's done
                         </p>
                     </div>
@@ -65,26 +65,25 @@
                         </figure>
                     </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide" id="work_">
                     <div class="work">
-                       
                             <!-- <img src="img/computer1.png" alt=""> -->
                             <iframe src="https://parkdb1.github.io/og.test" title="클론1"width="1040px"height="500px"align="middle"border-radius="5%">
                                 <div class="work_view">
                                 </div>
                             </iframe>
-                        
-                        <div class="work_txt">
-                            <p>
-                                WISE WEDDING
-                                CLONE CODING(Web)</p>
-                            <ul>
-                                <li>제작기간</li>
-                                <li>사용언어</li>
-                                <li>기술설명</li>
-                                <li>제작후기</li>
-                            </ul>
-                        </div>
+                            <div class="work_txt">
+                                <p>
+                                    WISE WEDDING
+                                    CLONE CODING(Web)</p>
+                                <ul>
+                                    <li>period : 21.12.02 ~ 12.17</li>
+                                    <li>language : HTML,CSS</li>
+                                    <li>link : https://parkdb1.github.io/og.test </li>
+                                    <!-- <li>제작후기</li> -->
+                                </ul>
+                            </div>
+                            
                     </div>
                 </div>
                 <div class="swiper-slide">
@@ -102,10 +101,10 @@
                                 밀리의서재
                                 CLONE CODING(Aap)</p>
                             <ul>
-                                <li>제작기간</li>
-                                <li>사용언어</li>
-                                <li>기술설명</li>
-                                <li>제작후기</li>
+                                <li>period : 21.01.03 ~ 01.19</li>
+                                <li>language : HMTL,CSS,JavaScript</li>
+                                <li>link : https://parkdb1.github.io/millie </li>
+                                <!-- <li>제작후기</li> -->
                             </ul>
                         </div>
                     </div>
@@ -128,7 +127,7 @@
                 Profile
             </p>
         </div>
-        <div class="about">
+        <div class="about">            
             <h2>About Me</h2>
             <div class="contents">
                 <div class="who">
