@@ -162,6 +162,15 @@ main {
                     p{
                         font-size:22px;
                     }
+                    ul{
+                        li{
+                            a{
+                                color:#000;
+                                text-decoration: underline;
+                                text-underline-position:under;
+                            }
+                        }
+                    }
                 }
                 .work2_view{
                     // z-index:9999;

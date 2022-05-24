@@ -241,6 +241,12 @@ main article .swiper-slide .work .work_txt p {
   font-size: 22px;
 }
 
+main article .swiper-slide .work .work_txt ul li a {
+  color: #000;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
 main article .swiper-slide .work .work2_view {
   width: 360px;
   height: 640px;
